@@ -1,0 +1,11 @@
+scripts:
+  server:
+    - python manage.py runserver
+  makemigrations:
+    - python manage.py makemigrations
+  migrate:
+    - python manage.py migrate
+  freeze:
+    - python -m pip freeze > requirements.txt
+  download:
+    - python -m pip install -r requirements.txt
